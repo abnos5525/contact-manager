@@ -1,9 +1,12 @@
 {
+  "homepage": "https://abnos5525.github.io/contact-manager",
   "name": "contact-manager",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "vite build",
+    "deploy":"gh-pages -d dist",
     "start": "concurrently \"vite --port 3000\" \"cd server && npm start\" ",
     "dev": "vite --port 3000",
     "build": "vite build",
@@ -33,6 +36,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.2.0",
     "vite": "^5.0.8"
   }
 }
